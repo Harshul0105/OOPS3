@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+//operator overloading
+
+class Complex
+{
+    int real;
+    int img;
+    
+    public:
+    Complex(int real, int img)
+    {
+      this ->real = real;
+      this-> img= img;
+    }
+    
+    void display(){
+        cout<<real<<"+i"<<img<<endl;
+    }
+};
+int main() {
+    Complex c1(3,2);
+    c1.display();
+    Complex c2(4,5);
+    c2.display();
+    return 0;
+}
